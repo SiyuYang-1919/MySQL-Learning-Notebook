@@ -15,6 +15,7 @@
 - 基于共享文件系统, e.g., Access;
 - 基于客户机(C/S), e.g., MySQL, Oracle, SqlServer
 ### 4. 登录/退出MySQL:
+(Reference: [stackoverflow](https://stackoverflow.com/questions/14235362/mac-install-and-open-mysql-using-terminal))
 - 确保服务器启动;
 - 登录
 for mac, in terminal:
