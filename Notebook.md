@@ -1,6 +1,6 @@
 [Course Link](https://www.bilibili.com/video/BV12b411K7Zu?p=3&spm_id_from=pageDriver)
 
-## Day 1
+## Day 1 (P1-P10)
 ### 1. Basic concepts:
 - DB (database);
 - DBMS (Database Management System): mysql, oracle, db2, sqlserver...
