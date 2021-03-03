@@ -49,3 +49,6 @@ SELECT DISTINCT department_id FROM employees;
 一方为null: select null+90; (null)
 */
 SELECT null+90;
+
+#10) concat函数;
+SELECT CONCAT(last_name,first_name) AS 姓名 FROM employees;

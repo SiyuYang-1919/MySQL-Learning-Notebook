@@ -30,7 +30,7 @@ in terminal:
 mysql> exit
 ```
 
-## Day 2 (P11- )
+## Day 2 (P11-26)
 ### 1. 常用命令:
 - 查看数据库:
 ```
@@ -89,3 +89,6 @@ sql> select version();
 - DML(Data Manipulation Language) ---> 增删改;
 - DDL(Data Define Language) ---> 库和表的管理;
 - TCL(Transaction Control Language) ---> 事务处理
+
+### 5. DQL(myemploy.sql为例)
+笔记和命令见 基本查询.sql
