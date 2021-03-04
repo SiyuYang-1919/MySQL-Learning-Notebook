@@ -92,3 +92,6 @@ sql> select version();
 
 ### 5. DQL(myemploy.sql为例)
 笔记和命令见 基本查询.sql
+
+## Day 3 (P27-37)
+笔记和命令见 基本查询.sql和条件查询.sql
