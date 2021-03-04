@@ -52,3 +52,32 @@ SELECT null+90;
 
 #10) concat函数;
 SELECT CONCAT(last_name,first_name) AS 姓名 FROM employees;
+
+#--------------------------------------------------------------
+
+# 练习题
+# 1.
+SELECT last_name, job_id, salary AS sal
+FROM employees;
+
+# 2.
+SELECT * 
+FROM employees;
+
+# 3. 
+DESC departments;
+SELECT * FROM departments;
+
+# 4.
+SELECT DISTINCT job_id FROM employees;
+
+# 5. 
+SELECT 
+     IFNULL(commission_pct,0) AS 奖金率, commission_pct
+ FROM
+     employees;
+ 
+SELECT  
+     CONCAT(employee_id,',',first_name,',',last_name,',',email,',',phone_number,',',job_id,',',salary,',',IFNULL(commission_pct,0))
+AS `OUT_PUT` 
+FROM employees;
