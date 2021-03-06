@@ -95,3 +95,10 @@ sql> select version();
 
 ## Day 3 (P27-37)
 笔记和命令见 基本查询.sql和条件查询.sql
+
+## Day 4 (P38-49)
+- 时间格式符:
+<p align="center">
+<img src=1615045178187.jpg width="300" height="300" alt="knn" align=center>
+
+
