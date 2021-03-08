@@ -100,6 +100,10 @@ sql> select version();
 - 时间格式符:
 <p align="center">
 <img src=1615045178187.jpg width="300" height="300" alt="knn" align=center>
+笔记和命令见 排序查询.sql和分组查询.sql
 
-## Day 4 (P50-62)
+## Day 5 (P50-61)
+笔记和命令见 常用函数-单行函数.sql和常用函数-分组函数.sql
 
+## Day 6 (P62-72)
+笔记和命令见 常用函数-分组函数.sql和连接查询
