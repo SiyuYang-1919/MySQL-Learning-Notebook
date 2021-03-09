@@ -205,30 +205,30 @@ sql> select version();
 		curdate当前系统日期
 		curtime当前系统时间
 		str_to_date 将字符转换成日期
+		date_format将日期转换成字符
+        datediff返回两个日期相差的天数
+        monthname以英文形式返回月份
+        year返回年
+        month返回月
+        day返回日
 <p align="center">
 <img src=1615045178187.jpg width="300" height="300" alt="knn" align=center>
-		date_format将日期转换成字符
-    datediff返回两个日期相差的天数
-    monthname以英文形式返回月份
-    year返回年
-    month返回月
-    day返回日
 		
 	4、流程控制函数
 		if(条件表达式，表达式1，表达式2) 处理双分支
 		case语句 处理多分支
-			情况1：处理等值判断
-      case 变量或表达式或字段
-      when 常量1 then 值1
-      when 常量2 then 值2
-      else 值n
-      end
-			情况2：处理条件判断
-      case 
-      when 条件1 then 值1
-      when 条件2 then 值2
-      else 值n
-      end
+		情况1：处理等值判断
+        case 变量或表达式或字段
+        when 常量1 then 值1
+        when 常量2 then 值2
+        else 值n
+        end
+		情况2：处理条件判断
+        case 
+        when 条件1 then 值1
+        when 条件2 then 值2
+        else 值n
+        end
 		
 	5、其他函数
 		version版本
@@ -282,6 +282,7 @@ sql> select version();
 一、sql92语法：
 
 等值连接
+
     语法：
 	select 查询列表
 	from 表1 别名, 表2 别名
@@ -297,6 +298,7 @@ sql> select version();
 	4.一般为表起别名，提高阅读性和性能
 
 非等值连接
+
     语法：
 	select 查询列表
 	from 表1 别名, 表2 别名
@@ -307,6 +309,7 @@ sql> select version();
 	[order by 排序字段]
 
 自连接
+
     语法：
 	select 查询列表
 	from 表 别名1, 表 别名2
