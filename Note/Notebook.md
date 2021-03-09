@@ -107,3 +107,5 @@ sql> select version();
 
 ## Day 6 (P62-72)
 笔记和命令见 常用函数-分组函数.sql和连接查询
+
+## Day 7 (P73-)
