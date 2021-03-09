@@ -252,7 +252,7 @@ sql> select version();
 	
 		   建议使用 count(*)
 
-##进阶5：分组查询
+### 5. 分组查询 (分组查询.sql)
 	语法：
 	select 查询的字段，分组函数
 	from 表
@@ -316,43 +316,4 @@ sql> select version();
 	[having 分组后的筛选]
 	[order by 排序字段]
 
-	
-二、sql99语法：通过join关键字实现连接 [推荐使用]
-
-	含义：1999年推出的sql语法
-	支持：
-	等值连接、非等值连接 （内连接）
-	外连接
-	交叉连接
-	
-	语法：
-	
-	select 字段，...
-	from 表1
-	【inner|left outer|right outer|cross】join 表2 on  连接条件
-	【inner|left outer|right outer|cross】join 表3 on  连接条件
-	【where 筛选条件】
-	【group by 分组字段】
-	【having 分组后的筛选条件】
-	【order by 排序的字段或表达式】
-	
-	好处：语句上，连接条件和筛选条件实现了分离，简洁明了！
-
-	
-三、自连接
-
-案例：查询员工名和直接上级的名称
-
-sql99
-
-	SELECT e.last_name,m.last_name
-	FROM employees e
-	JOIN employees m ON e.`manager_id`=m.`employee_id`;
-
-sql92
-
-	
-	SELECT e.last_name,m.last_name
-	FROM employees e,employees m 
-	WHERE e.`manager_id`=m.`employee_id`;
-
+	学完P77
