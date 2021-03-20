@@ -319,4 +319,112 @@ sql> select version();
 	[having 分组后的筛选]
 	[order by 排序字段]
 
-	学完P77
+二、sql99语法：
+
+内连接
+
+    语法：
+	select 查询列表
+	from 表 别名1, 
+	inner join 表 别名2
+	on 连接条件
+	where 等值的连接条件
+	[and 筛选条件]
+	[group by 分组字段]
+	[having 分组后的筛选]
+	[order by 排序字段]
+	limit 子句;
+
+	特点：
+	(1) 表的顺序可以调换;
+	(2) 内连接的结果=多表的交集;
+	(3) n表连接至少需要n-1个连接条件
+
+外连接
+    语法：
+	select 查询列表
+	from 表 别名1, 
+	left|right|full[outer] join 表 别名2
+	on 连接条件
+	where 等值的连接条件
+	[and 筛选条件]
+	[group by 分组字段]
+	[having 分组后的筛选]
+	[order by 排序字段]
+	limit 子句;
+
+	特点：
+	(1) 查询的结果=主表中所有的行，如果从表和它匹配的将显示匹配行，不匹配的则显示null;
+	(2) left join左边就是主表，right join右边就是主表，full join两边都是主表;
+	(3) 一般用于查询除了交集部分的剩余的不匹配的行
+
+交叉连接
+    语法：
+	select 查询列表
+	from 表1 别名
+	cross join 表2 别名;
+
+	特点：
+	类似于笛卡尔乘积
+
+### 7. 子查询（子查询.sql)
+含义:出现在其他语句内部的select语句，成为子查询或内查询;
+内部嵌套其他select语句的查询，称为外查询或主查询;
+
+分类:
+    子查询出现的位置:
+    select 后面 （标量子查询）
+    from 后面 （表子查询）
+    where或having后面 （标量子查询，列子查询，行子查询）
+    exists后面 （表子查询）
+
+    按结果集的行数不同:
+    标量子查询（结果集只有一行一列）
+    列子查询（结果集只有一列多行）
+    行子查询（结果集一行多列）
+    表子查询（结果集多行多列）
+
+示例:
+    where或having后面
+	1. 标量子查询;
+	查询最低工资的员工姓名和工资
+	step 1:
+	查询最低工资
+	step 2:
+	查询员工的姓名和工资，要求工资=step 1
+
+	2. 列子查询;
+	查询所有领导的员工姓名
+	step 1:
+	查询所有员工的manager_id
+	step 2:
+	查询姓名，employ_id in step 1
+
+### 8. 分页查询（分页查询.sql)
+应用场景：
+	实际的web项目中需要根据用户的需求提交对应的分页查询的sql语句
+
+语法：
+	select 字段|表达式,...
+	from 表
+	【join type 表2】
+	【on 连接字段】
+	【where 条件】
+	【group by 分组字段】
+	【having 条件】
+	【order by 排序的字段】
+	limit 【起始的条目索引，】条目数;
+
+特点：
+	1.起始条目索引从0开始
+	2.limit子句放在查询语句的最后
+	3.公式：select * from  表 limit （page-1）*size,size
+	假设：
+	每页显示条目数size
+	要显示的页数 page
+
+
+
+
+
+
