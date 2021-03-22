@@ -529,6 +529,7 @@ sql92
 	
 	#②修改表名
 	ALTER TABLE stuinfo RENAME [TO]  studentinfo;
+	
 	#③修改字段类型和列级约束
 	ALTER TABLE studentinfo MODIFY COLUMN borndate DATE ;
 	
